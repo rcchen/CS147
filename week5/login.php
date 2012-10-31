@@ -30,26 +30,21 @@
 	<div data-role="content">
 	
 	<p>The form should go here</p>
-		<div data-role="fieldcontain">
-			
-		</div>	
-	
-		
+	<form>
+		<label for="username">Username:</label>
+		<input type="text" name="username" id="username" value="" />
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" value="" />
+		<input type="submit" value="Submit" />
+		<a href="#" data-role="button">Facebook Connect</a>
+	</form>
 	<div id="info">
 		<p>Thank you for logging. You should be able to see all sorts of user information here.</p>
 	</div>	
 	</div><!-- /content -->
 
-    <div data-role="footer" data-id="samebar" class="nav-glyphish-example" data-position="fixed" data-tap-toggle="false">
-		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
-		<ul>
-			<li><a href="index.php" id="home" data-icon="custom">Home</a></li>
-			<li><a href="login.php" id="key" data-icon="custom" class="ui-btn-active">Login</a></li>
-			<li><a href="filter.php" id="beer" data-icon="custom">Filter</a></li>
-			<li><a href="#" id="skull" data-icon="custom">Settings</a></li>
-		</ul>
-		</div>
-	</div>
+    <? include_once('footer.php'); ?>
+
 	<script type="text/javascript">
 	$("#logout").hide();
 	$("#info").hide();
